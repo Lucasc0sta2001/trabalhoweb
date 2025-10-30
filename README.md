@@ -1,2 +1,69 @@
-# trabalhoweb
-Trabalho
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+    .carousel {
+        margin: 100px auto;
+        width: 90%;
+        border: 5px solid red;
+        display: flex;
+        overflow: hidden;
+    }
+
+    .carousel::-webkit-scrollbar{
+        display: none;
+    }
+
+    .group{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        animation: spin 10s infinite linear;
+        padding-right: 1em;
+        
+    }
+
+
+    .card{
+        flex: 0 0 150px;
+        height: 5em;
+        padding: 1em;
+        background: cornflowerblue;
+        font-size: 3rem;
+        border-radius: .2em;
+        text-align: center;
+        align-content: center;
+        border-radius: .3em;
+
+    }
+
+    @keyframes spin {
+        from {transform: translateX(0);}
+        to {transform: translateX(-50%);}
+    }
+
+   </style>
+</head>
+<body>
+    <div class="carousel">
+        <div class="group">                 
+            <div class="card">1</div>        
+            <div class="card">2</div>        
+            <div class="card">3</div>
+            <div class="card">4</div>
+            <div class="card">5</div>
+            <div class="card">6</div>
+        </div>
+
+         <div class="group">                 
+            <div class="card">1</div>        
+            <div class="card">2</div>        
+            <div class="card">3</div>
+            <div class="card">4</div>
+            <div class="card">5</div>
+            <div class="card">6</div>
+        </div>
+    </div>
+</body>
+</html>
